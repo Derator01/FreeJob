@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeJob.Server", "Server\FreeJob.Server.csproj", "{AFD08EC5-1C93-4A63-A82B-08A9346E85BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeJob.Server", "Server\FreeJob.Server.csproj", "{AFD08EC5-1C93-4A63-A82B-08A9346E85BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeJob.Client", "Client\FreeJob.Client.csproj", "{1CC11FAA-D07A-4EAA-99DC-0754788AD2EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeJob.Client", "Client\FreeJob.Client.csproj", "{1CC11FAA-D07A-4EAA-99DC-0754788AD2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeJob.Shared", "Shared\FreeJob.Shared.csproj", "{DA778A23-174C-423D-AEA7-9DDCC2768302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeJob.Shared", "Shared\FreeJob.Shared.csproj", "{DA778A23-174C-423D-AEA7-9DDCC2768302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

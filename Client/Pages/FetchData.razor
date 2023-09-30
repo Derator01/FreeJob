@@ -1,9 +1,11 @@
-﻿@page "/fetchdata"
+﻿@page "/job-offers"
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using FreeJob.Shared
+@using System.Security.Claims;
 
 @inject HttpClient Http
+@inject NavigationManager navManager
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -41,6 +43,15 @@ else
         </tbody>
     </table>
 }
+
+<AuthorizeView>
+    <Authorized>
+        @if(!context.User.IsInRole("Employer"))
+        {
+            <button @onclick='() => navManager.NavigateTo("/job-offers/add-job",false)'>Add Job</button>
+        }
+    </Authorized>
+</AuthorizeView>
 
 @code {
     private Job[]? jobs;

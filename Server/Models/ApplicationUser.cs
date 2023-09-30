@@ -4,5 +4,12 @@ namespace FreeJob.Server.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public UserType Type { get; set; }
+
+        public enum UserType
+        {
+            Employee,
+            Employer
+        }
     }
 }
