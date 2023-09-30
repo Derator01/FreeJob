@@ -1,7 +1,26 @@
 ﻿@page "/job-offers/add-job"
 
-<h3>AddJob</h3>
+<AuthorizeView>
+    <NotAuthorized>
+        <RedirectToIndex />
+    </NotAuthorized>
+    <Authorized>
+        @if (context.User.IsInRole("Employer"))
+        {
+            
 
-@code {
+
+
+        }
+        else
+        {
+            <RedirectToIndex />
+        }
+    </Authorized>
+</AuthorizeView>
+
+@code
+{
+    
 
 }

@@ -4,6 +4,7 @@ using FreeJob.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FreeJob.Server.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230930130956_Seed")]
+    partial class Seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -260,24 +263,17 @@ namespace FreeJob.Server.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "014c370f-641a-48b8-aec8-2e6630ad395a",
-                            ConcurrencyStamp = "6a069e37-2b0f-43db-b923-f3087b16b77f",
+                            Id = "e3d78a50-8bed-417c-9c42-eb12172bf8ac",
+                            ConcurrencyStamp = "25fa7555-c63f-46d9-9c55-fc471ec7576e",
                             Name = "Employee",
                             NormalizedName = "EMPLOYEE"
                         },
                         new
                         {
-                            Id = "ec8e5f94-b800-416e-b438-28f3c5195bbf",
-                            ConcurrencyStamp = "4ffe20b1-d6c0-4fa3-9572-ab00ebf55f5d",
+                            Id = "261e9cd0-68b5-4823-9d43-95f8f6a2ddba",
+                            ConcurrencyStamp = "163d775b-582a-4de5-82a2-b49a05f6222d",
                             Name = "Employer",
                             NormalizedName = "EMPLOYER"
-                        },
-                        new
-                        {
-                            Id = "eee538b4-7a0a-4f06-bcc1-50a0fbbb0a79",
-                            ConcurrencyStamp = "72cf8818-421c-457f-beb5-297bdb19cf35",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
                         });
                 });
 

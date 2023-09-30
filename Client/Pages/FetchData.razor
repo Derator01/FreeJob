@@ -46,7 +46,7 @@ else
 
 <AuthorizeView>
     <Authorized>
-        @if(!context.User.IsInRole("Employer"))
+        @if(context.User.IsInRole("Employer"))
         {
             <button @onclick='() => navManager.NavigateTo("/job-offers/add-job",false)'>Add Job</button>
         }
